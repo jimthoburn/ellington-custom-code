@@ -212,3 +212,9 @@
   #container_home_header {
   }
 
+
+  /* Temporary shim */
+  body {
+    position: static !important;
+  }
+
