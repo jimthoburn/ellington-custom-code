@@ -3,9 +3,11 @@
   (function() {
     var timer;
     function check() {
-      if (document.getElementById('cms_tools_top')) {
-        var stylesheet = document.querySelector('link[href*="jimthoburn.github.io"]');
-        if (stylesheet) stylesheet.parentNode.removeChild(stylesheet);
+      if ( document.getElementById('public_site') || document.getElementById('cms_tools_top')) {
+        var stylesheets = document.querySelectorAll('link[href*="jimthoburn.github.io"]');
+        for (var index = 0; index < stylesheets.length; index++) {
+          stylesheets[index].parentNode.removeChild(stylesheets[index]);
+        }
       }
       clearInterval(timer);
     }
