@@ -43,7 +43,7 @@
   @media (min-width: 1000px) {
   */
     #container_header::after {
-      top: 0;
+      top: 1.5em;
     }
   /*
   }
