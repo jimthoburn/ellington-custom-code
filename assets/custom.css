@@ -34,7 +34,7 @@
 
   #container_header::after,
   #container_home_header::after {
-    background-image: url(../uploads/ellington.png);
+    background-image: url(..{{ site.data.settings.logo }});
   }
 
   #container_home_header::before {
@@ -162,6 +162,12 @@
   body {
     position: static !important;
   }
+
+  #container_header {
+    background-image: url(..{{ site.data.settings.default_image }}) !important;
+    background-position: center !important;
+  }
+
 
 {% for page in site.pages %}
   {% if page.image %}

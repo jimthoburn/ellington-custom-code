@@ -17,4 +17,3 @@ defaults:
 permalink: pretty
 exclude:
 - README.md
-logo: "/uploads/ellington.png"
