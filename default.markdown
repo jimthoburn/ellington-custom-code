@@ -1,6 +1,6 @@
 ---
 title: Ellington K-8 School
-position: 3
+position: 0
 image: "/uploads/teacher.jpg"
 ---
 

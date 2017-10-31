@@ -1,6 +1,6 @@
 ---
 title: Home
-position: 0
+position: 1
 image: "/uploads/students.png"
 ---
 
