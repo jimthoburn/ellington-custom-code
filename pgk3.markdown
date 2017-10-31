@@ -1,6 +1,6 @@
 ---
 title: Primary Grades (K - 3)
-position: 2
+position: 3
 image: "/uploads/teacher.jpg"
 ---
 
