@@ -34,7 +34,7 @@
 
   #container_header::after,
   #container_home_header::after {
-    background-image: url(/uploads/ellington.png);
+    background-image: url(../uploads/ellington.png);
   }
 
   #container_home_header::before {
@@ -167,14 +167,14 @@
   {% if page.image %}
     {% if page.url == '/home/' %}
       #container_home_header {
-        background-image: url({{ page.image }}) !important;
+        background-image: url(..{{ page.image }}) !important;
         background-position: bottom !important;
         background-size: auto 70% !important;
       }
     {% else %}
       {% if page.url != '/default/' %}
       [data-azusa-uri*="{{ page.url }}"]{% endif %} #container_header {
-        background-image: url({{ page.image }}){% if page.background_image %}, url({{ page.background_image }}){% endif %} !important;
+        background-image: url(..{{ page.image }}){% if page.background_image %}, url(..{{ page.background_image }}){% endif %} !important;
         background-position: center !important;
 
         {% if page.has_special_position %}
