@@ -34,7 +34,7 @@
 
   #container_header::after,
   #container_home_header::after {
-    background-image: url(..{{ site.data.settings.logo }});
+    background-image: url(..{{ site.logo }});
   }
 
   #container_home_header::before {
@@ -164,7 +164,7 @@
   }
 
   #container_header {
-    background-image: url(..{{ site.data.settings.default_image }}) !important;
+    background-image: url(..{{ site.default_image }}) !important;
     background-position: center !important;
   }
 
