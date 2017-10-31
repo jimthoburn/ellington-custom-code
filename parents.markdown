@@ -1,6 +1,6 @@
 ---
 title: Parents
 position: 4
-image: "/uploads/weather.jpg"
+image: "/uploads/raising-hands.jpg"
 ---
 
