@@ -1,6 +1,6 @@
 ---
 title: Parents
 position: 4
-image: "/uploads/student.jpg"
+image: "/uploads/students.png"
 ---
 
