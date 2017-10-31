@@ -178,8 +178,7 @@
         background-size: auto 70% !important;
       }
     {% else %}
-      {% if page.url != '/default/' %}
-      [data-azusa-uri*="{{ page.url | remove: "/" }}"]{% endif %} #container_header {
+      [data-azusa-uri*="{{ page.url | remove: "/" }}"] #container_header {
         background-image: url(..{{ page.image }}){% if page.background_image %}, url(..{{ page.background_image }}){% endif %} !important;
         background-position: center !important;
 
