@@ -171,6 +171,7 @@
   /* If the client supports object fit,  position it above the default banner image and crop it using object fit and height */
   @supports(object-fit: cover) {
     #page_title + table > tbody > tr > td > #block_hub_main_b > .block_content_main > div > div[style="width: 100%; width: 350px"] > img[width="350"],
+    #page_title + table > tbody > tr > td > #block_hub_main > .block_content_main > div > div[style="width: 100%; width: 465px"] > img[width="465"],
     #page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"] {
       position: absolute;
       top: 3em;
@@ -184,6 +185,7 @@
     @supports(zoom: 1) {
       @media (min-width: 1300px) {
         #page_title + table > tbody > tr > td > #block_hub_main_b > .block_content_main > div > div[style="width: 100%; width: 350px"] > img[width="350"],
+        #page_title + table > tbody > tr > td > #block_hub_main > .block_content_main > div > div[style="width: 100%; width: 465px"] > img[width="465"],
         #page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"] {
           height: 45vh !important;
           min-height: 25vw;

@@ -72,10 +72,12 @@
         var image = document.querySelector(
           '#page_title + table > tbody > tr > td > #block_hub_main_b > .block_content_main > div > div[style="width: 100%; width: 350px"] > img[width="350"]'
           + ', ' +
+          '#page_title + table > tbody > tr > td > #block_hub_main > .block_content_main > div > div[style="width: 100%; width: 465px"] > img[width="465"]'
+          + ', ' +
           '#page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"]'
         );
         if (image) {
-          image.setAttribute('src', image.getAttribute('src').replace('w350', 'w2000').replace('w700', 'w2000'));          
+          image.setAttribute('src', image.getAttribute('src').replace('w350', 'w2000').replace('w465', 'w2000').replace('w700', 'w2000'));          
         }        
       });
 
