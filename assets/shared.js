@@ -70,13 +70,13 @@
       // If that image is found, update it’s URL from w700 to w2000
       document.addEventListener('DOMContentLoaded', function() {
         var image = document.querySelector(
-          '#container_content_home > .content_full > div > div[style="width: 100%; width: 970px"] > img[width="970"]'
+          '#container_content_home > .content_full > div > div[style="width: 100%; width: 970px"] > img[width="970"]:first-of-type'
           + ', ' +
-          '#page_title + table > tbody > tr > td > #block_hub_main_b > .block_content_main > div > div[style="width: 100%; width: 350px"] > img[width="350"]'
+          '#page_title + table > tbody > tr > td > #block_hub_main_b > .block_content_main > div > div[style="width: 100%; width: 350px"] > img[width="350"]:first-of-type'
           + ', ' +
-          '#page_title + table > tbody > tr > td > #block_hub_main > .block_content_main > div > div[style="width: 100%; width: 465px"] > img[width="465"]'
+          '#page_title + table > tbody > tr > td > #block_hub_main > .block_content_main > div > div[style="width: 100%; width: 465px"] > img[width="465"]:first-of-type'
           + ', ' +
-          '#page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"]'
+          '#page_title + #block_wide_main > .block_content_main > div > div[style="width: 100%; width: 700px"] > img[width="700"]:first-of-type'
         );
         if (image) {
           image.setAttribute('src', image.getAttribute('src').replace('w350', 'w2000').replace('w465', 'w2000').replace('w700', 'w2000').replace('w970', 'w2000'));
