@@ -4,18 +4,31 @@
     var timer;
     function check() {
       if ( document.getElementById('public_site') || document.getElementById('cms_tools_top')) {
-        var stylesheets = document.querySelectorAll('link[href*="jimthoburn.github.io"]');
+        var stylesheets = document.querySelectorAll('style[data-custom-code]');
         for (var index = 0; index < stylesheets.length; index++) {
           stylesheets[index].parentNode.removeChild(stylesheets[index]);
         }
+        clearInterval(timer);
       }
-      clearInterval(timer);
     }
+
+    // Check frequently
     timer = setInterval(check, 10);
+
+    // Check one last time when the DOM has loaded
     document.addEventListener('DOMContentLoaded', function() {
       check();
       clearInterval(timer);
     });
+    // Stop checking when everything has loaded
+    document.addEventListener('load', function() {
+      clearInterval(timer);
+    });
+
+    // If all else fails, stop checking after five seconds
+    setTimeout(function() {
+      clearInterval(timer);
+    }, 5000);
   })();
 
 
